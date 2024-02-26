@@ -1,0 +1,13 @@
+function joinShecodes() {
+  let firstname = prompt("What is your first name?");
+  let age = prompt("How old are you?");
+  if (age >= 18) {
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "Hi" + firstname + "!Welcome to SheCodes";
+  } else {
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "Sorry" + firstname + "!You cannot join SheCodes";
+  }
+}
+let contactButton = document.querySelector("button");
+contactButton.addEventListener("click", joinShecodes);
